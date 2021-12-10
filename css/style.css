@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffe0;
+  font-family: "Spoqa Han Sans Neo", "Sans-serif";
+}
+
+#section {
+  position: relative;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  /* 가운데 설정 */
+  margin: 0 auto;
+  padding: 0 20rem;
+}
+
+.header-row-img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.section-content {
+  display: flex;
+  justify-content: center;
+}
+
+.section-img-santa {
+  width: 400px;
+  margin-top: 5rem;
+  position: relative;
+  right: 250px;
+}
+
+.section-img-arrow {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 65px;
+  right: 300px;
+}
+
+.btn-home {
+  width: 40px;
+}
+
+.btn-store {
+  width: 40px;
+}
+
+.btn-character {
+  width: 50px;
+}
+
+.btn-qna {
+  width: 40px;
+}
