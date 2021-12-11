@@ -16,57 +16,253 @@ body {
   position: relative;
 }
 
-.inner {
+.header-inner {
   width: 100%;
   height: 100%;
-  /* 가운데 설정 */
-  padding: 0 10rem;
+  margin-top: 40px;
+  padding: 0 50px;
 }
 
 .header-row-img {
   width: 100%;
-  margin-top: 3rem;
 }
 
 .section-main {
-  width: 100%;
-  height: 100%;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+}
+
+.section-img {
+  display: flex;
   position: relative;
 }
 
-.image-box {
-  width: 50%;
-  display: flex;
+.class-santa {
+  padding-top: 30px;
 }
 
-.santa-img {
-  width: 650px;
-  height: 650px;
+.stanta-img {
+  width: 466px;
+  height: 600px;
 }
 
 .arrow-img {
-  width: 10%;
-  height: 10%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 50px;
 }
-.btn-box {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
+
+.class-list {
+  line-height: 40px;
+  list-style: none;
+  margin: 0 0 0 30px;
+  padding: 0 30px;
 }
+
 .btn-home {
-  width: 10%;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.btn-home:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -5px #535151;
+  transition: 1s;
+  transform: translate(-2px, -2px);
 }
 
 .btn-store {
-  width: 10%;
+  width: 170px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.btn-store:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -5px #535151;
+  transition: 1s;
+  transform: translate(-2px, -2px);
 }
 
 .btn-character {
-  width: 10%;
+  width: 400px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.btn-character:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -5px #535151;
+  transition: 1s;
+  transform: translate(-2px, -2px);
 }
 
 .btn-qna {
-  width: 10%;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.btn-qna:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -5px #535151;
+  transition: 1s;
+  transform: translate(-2px, -2px);
+}
+
+.content-review {
+  display: flex;
+}
+
+.review-img--first {
+  position: relative;
+}
+
+.review-img--first .first-review {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 150px;
+  height: 149px;
+  overflow: hidden;
+}
+
+.review-img--second {
+  position: relative;
+  top: 100px;
+  left: -70px;
+  z-index: 1;
+}
+
+.review-img--second .second-review {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 150px;
+  height: 149px;
+  overflow: hidden;
+}
+
+.review-img--third {
+  position: relative;
+  top: -50px;
+  left: -100px;
+  z-index: 0;
+}
+
+.review-img--third .third-review {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 150px;
+  height: 149px;
+  overflow: hidden;
+}
+
+.review-img--fourth {
+  position: relative;
+  transform: rotate(20deg);
+  top: 50px;
+  left: -140px;
+}
+
+.review-img--fourth .fourth-review {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 150px;
+  height: 149px;
+  overflow: hidden;
+}
+
+.img-review {
+  width: 170px;
+  height: 210px;
+}
+
+.talk-fixed {
+  position: fixed;
+  top: 600px;
+  right: 50px;
+}
+
+.img-talk {
+  width: 100px;
+  height: 80px;
+}
+
+.img-talk:hover {
+  cursor: pointer;
+  animation: talk 2s infinite linear;
+}
+
+@keyframes talk {
+  0%,
+  50% {
+    transform: rotate(0deg);
+  }
+  5%,
+  15%,
+  25%,
+  35%,
+  45% {
+    transform: rotate(13deg);
+  }
+  10%,
+  20%,
+  30%,
+  40% {
+    transform: rotate(-13deg);
+  }
+}
+
+.image-list {
+  padding: 0 50px;
+}
+
+.product-list {
+  display: flex;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.class-image {
+  margin: 0 10px;
+}
+
+.img-product {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.img-product:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px -5px #c0bcbc;
+  transition: 0.5s;
+  transform: translate(-2px, -2px);
+}
+
+/* 1200px보다 가로 사이즈가 커질 때 */
+@media only screen and (max-width: 1200px) {
+  .content-review {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .content-menu {
+    display: none;
+  }
+
+  .class-arrow {
+    display: none;
+  }
 }
