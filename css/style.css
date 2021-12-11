@@ -90,7 +90,7 @@ body {
 }
 
 .btn-character {
-  width: 400px;
+  width: 250px;
   height: 50px;
   border-radius: 15px;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .btn-qna {
-  width: 150px;
+  width: 90px;
   height: 50px;
   border-radius: 15px;
 }
